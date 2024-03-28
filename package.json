@@ -2,6 +2,7 @@
   "name": "course-directory",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://tlyrag.github.io/FullStackDeployment",
   "devDependencies": {
     "react-scripts": "^5.0.0"
   },
@@ -11,6 +12,8 @@
     "react-router-dom": "^6.4.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy":"npm gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
